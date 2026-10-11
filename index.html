@@ -2,6 +2,13 @@
 <html lang="he" dir="rtl">
 <head>
 <meta charset="utf-8">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1f4fa8">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="מכינה 098">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>מערכת מכינה 098</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -309,6 +316,7 @@ let sx=null; const g=document.getElementById('grid');
 g.addEventListener('touchstart',e=>{sx=e.touches[0].clientX},{passive:true});
 g.addEventListener('touchend',e=>{if(sx==null)return;const dx=e.changedTouches[0].clientX-sx; if(Math.abs(dx)>70) go(add(wk,dx>0?7:-7)); sx=null});
 render();
+if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(()=>{})}
 </script>
 
 </body>
