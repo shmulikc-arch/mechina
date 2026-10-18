@@ -1,13 +1,13 @@
 {
- "name": "מכינת גברים 098 · תשפ״ז",
- "short_name": "מכינה 098",
+ "name": "מכינה תשפ״ז",
+ "short_name": "מכינה תשפ״ז",
  "lang": "he",
  "dir": "rtl",
  "start_url": "./",
  "scope": "./",
  "display": "standalone",
- "background_color": "#f3f5f8",
- "theme_color": "#1f4fa8",
+ "background_color": "#ffffff",
+ "theme_color": "#0d3f6f",
  "icons": [
   {
    "src": "icon-192.png",
